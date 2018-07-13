@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width= device-width, initial-scale= 1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js.js"></script>
+	
+	<title>Nav</title>
+</head>
+<body>
+	<header>
+	  <div class="nav_logo"><a href="index.jsp"><img src="logo.png" height="100" width="300"></a></div>	
+	  <div class="nav_ham">
+      	<span class="nav_ham_line"></span>
+      </div>
+      <nav class="nav">
+    	<a class="nav_link" href="index.jsp"><i class="fas fa-home"></i></a>
+    	<div class="nav_cat">
+    		<a class="nav_link droplist_top">Kategorije <span class="nav_arrow"><i class="fas fa-angle-down"></i></span></a>
+    		<div class="nav_droplist">
+    			<a href="result.jsp" class="nav_link droplist_link">Laptopovi</a>
+    			<a href="result.jsp" class="nav_link droplist_link">Desktop</a>
+    			<a href="result.jsp" class="nav_link droplist_link">Miševi</a>
+    		</div>
+    	</div>
+        <a class="nav_link" href="placanje.jsp">Plaćanje</a>
+    	<a class="nav_link" href="kontakt.jsp">Kontakt</a>
+      </nav>
+      <div class="bucket">
+      	<div class="bucket_size"><i class="fas fa-shopping-cart"></i><span class="bucket_size_span">0</span></div>
+      	<div class="bucket_list">
+      		<ul>
+      			<li>Lenovo g57686, 350€  <span>&times;</span></li>
+      			<li>Lenovo g57686, 350€  <span>&times;</span></li>
+      			<li>Lenovo g57686, 350€  <span>&times;</span></li>
+      			<li>Lenovo g57686, 350€  <span>&times;</span></li>
+      		</ul>
+      		<div class="bucket_sum">Sum: 5000€</div>
+      		<div class="bucket_btn_container"><button class="bucket_btn"  onclick="window.location= './buyingdetails.jsp'">Nastavi</button></div>
+      	</div>
+      </div>
+      
+    </header>
+    
+</body>  
+</html>

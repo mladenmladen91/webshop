@@ -1,0 +1,280 @@
+header{
+	padding: 1.5rem;
+	color: #4b4e51;
+	font-size: 1.2rem;
+	height: 25vh;
+	position: relative;
+	width: 100vw;
+	background-color: rgba(0,0,0,.3);
+}
+section{
+	width: 100%;
+}
+header a{
+	color: #9B0808;
+	text-decoration: none;
+
+}
+.nav_logo{
+	display: block;
+	float: left;
+}
+nav{
+	display: block;
+	float: right;
+	color: #9B0808;
+
+}
+nav > * {
+	float: left;
+	display: block;
+	line-height: 2rem;
+	height: 2rem;
+	padding: 1.5rem;
+	font-weight: bold;
+}
+.nav_cat{
+	position: relative;
+	cursor: pointer;
+	
+}
+.droplist_top{
+	display: block;
+}
+.nav_droplist{
+	display: none;
+	z-index: 100;
+	background: white;
+	position: absolute;
+	left:0;
+	box-shadow: 0 .5rem 1rem rgba(0,0,0,.8);
+}
+.droplist_link{
+	display: block;
+	padding: .2rem .6rem; 
+	width: 6rem !important;
+	
+}
+.nav_link{
+	text-align: center;
+	font-size: 1.2rem !important;
+}
+.nav_link::after{
+	content: "";
+	height: 0.2rem;
+	width: 0;
+	background-color: #9B0808;
+	display: block;
+	margin-top: 1rem;
+	transition: width .2s;
+}
+.nav_link:hover::after{
+	width: 100%;
+}
+
+.nav_cat:hover .nav_droplist{
+	display: block;
+}
+.bucket{
+	float: right;
+	display: block;
+	line-height: 2rem;
+	height: 2rem;
+	padding: 1.5rem;
+	font-weight: bold;
+	position: relative;
+	cursor: pointer;
+}
+.bucket_size{
+	display: block;
+
+}
+.bucket_list{
+	z-index: 1;
+	padding: 1.5rem;
+	display: none;
+	position: absolute;
+	left: 0;
+	box-shadow: 0 .5rem 1rem rgba(0,0,0,.3);
+	background: white;
+}
+.bucket_list ul{
+	list-style: none;
+	margin: 0;
+	padding-bottom: 2rem; 
+	text-align: center;
+	font-size: .8rem;
+	border-bottom: 2px solid #9B0808;
+}
+.bucket_list ul li{
+	text-align: center;
+}
+.bucket:hover .bucket_list{
+	display: block;
+}
+.bucket_sum{
+	text-align: right;
+	
+	margin-top: 2rem; 
+}
+.bucket_btn_container{
+	text-align: center;
+	padding: 1rem;
+}
+.bucket_btn{
+	position: relative;
+	background: #9B0808;
+	color: white;
+	margin: auto;
+	padding: 1rem;
+	border-radius: 5px;
+	border: none;
+	box-shadow: 0 0.5rem 1rem rgba(0,0,0,.8);
+}
+.bucket_btn::after{
+	content: "";
+	position: absolute;
+	z-index: -1;
+	transform: scale(1);
+	left: 0;
+	top: 0;
+	background: #9B0808;
+	width: 100%;
+	height: 100%;
+    border-radius: 5px;
+    transition: all .4s;
+}
+.bucket_btn:focus{
+	cursor: pointer;
+	outline: none;
+	box-shadow: 0 0.3rem 1rem rgba(0,0,0,.8);
+	transform: translateY(.2rem);
+
+} 
+.bucket_btn:hover{
+	cursor: pointer;
+}
+.bucket_btn:hover::after{
+	transform: scale(1.4);
+	opacity: 0;
+}
+.nav_ham{
+	float: right;
+	display: none;
+	height: 2rem;
+	width: 2rem;
+	line-height: 3rem;
+	height: 3rem;
+	padding: 1.5rem;
+	font-weight: bold;
+	border-radius: 5px;
+	border: 3px solid #9B0808;
+	cursor: pointer;
+	position: relative;
+	margin-right: 1.5rem;
+	transition: all .4s; 
+}
+.nav_ham_line{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: .4rem;
+    width: 80%;
+    display: block;
+    background-color: #9B0808;  
+}
+.nav_ham_line::before, .nav_ham_line::after{
+	content: "";
+	position: absolute;
+	left: 0;
+	height: .4rem;
+    width: 100%;
+    display: block;
+    background-color: #9B0808; 
+}
+.nav_ham_line::before{
+	top: -.8rem;
+}
+.nav_ham_line::after{
+	top: .8rem;
+}
+
+.navactive > .nav_ham_line{
+	background: transparent;
+}
+.navactive > .nav_ham_line::before{
+	top: 0;
+	transform: rotate(45deg);
+}
+.navactive > .nav_ham_line::after{
+	top: 0;
+	transform: rotate(-45deg);
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 900px){
+
+.nav_logo{
+	width: 30%;
+} 
+.nav_logo img{
+	height: 5rem;
+	width: 8rem;
+}  
+nav{
+	display: none;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+	background: white;
+	z-index: 5;
+	transition: width .4s;
+}
+.navwidth{
+	display: block;
+}
+nav > *{
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+
+.nav_ham{
+	display: block;
+	z-index: 10;
+}
+
+.index_column{
+	display: block;
+	font-size: .9rem;
+	width: 100%;
+}
+.index_column p {
+	margin-top: 1.5rem;
+}
+
+.info_contact{
+	width: 100%;
+}
+.info ul li{
+    font-size: 1rem !important;
+    text-align: left;
+}
+
+
+}
+
+

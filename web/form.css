@@ -1,0 +1,74 @@
+body{
+	background-image: url(img/shopping.jpg);
+}
+form{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	padding: 3rem;
+	border-radius: 5px;
+	box-shadow: 0 .5rem 1rem rgba(0,0,0,.5);
+	width: 30%;
+	color: white;
+	background-color: rgba(0,0,0,.8);
+	font-weight: bold;
+}
+form h1{
+text-align: center;
+font-size: 2rem;
+margin-bottom: 3rem;
+
+}
+label{
+	margin: .3rem;
+	display: block;
+	font-size: .9rem;
+	opacity: 1;
+	transform: translateY(0);
+	visibility: visible;
+	transition:  all .4s;
+}
+input{
+	width: 55%;
+	border: 4px solid transparent;
+	border-radius: 4px;
+	transition: all .4s;
+	height: 2rem;
+	padding: .15rem;
+	font-size: 1.2rem;
+	color: rgba(0,0,0,.6);
+}
+input:focus{
+	outline: none;
+	border-bottom-color: #9B0808;
+    width: 80%;
+}
+input:placeholder-shown + label{
+    opacity: 0;
+    visibility: hidden;
+	transform: translateY(-2rem); 
+}
+#log_submit{
+	width: 25% !important;
+	color: white;
+	background: #9B0808;
+	font-size: .9rem;
+}
+
+@media(max-width: 900px){
+    body{
+        background-size: cover;
+    }
+    
+    form{
+        width: 100%;
+    }
+    input{
+        font-size:2rem;
+    }
+    #log_submit{
+        width: 40%;
+        font-size: 1.2rem;
+    }
+}

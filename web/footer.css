@@ -1,0 +1,62 @@
+footer{
+	width: 100%;
+	background-color: #4b4e51;
+	color: #e6eaef;
+}
+
+.info{
+	margin: 0 auto;
+	width: 85%;
+	padding: 5rem;
+	text-align: center;
+	font-size: 1.3rem;
+	border-bottom: 1px solid #e6eaef;
+	overflow: hidden;
+
+}
+.info ul{
+	list-style: none;
+	margin: 2rem;
+}
+.info ul li{
+    font-size: 1.2rem !important;
+    margin-bottom: .5rem;
+}
+
+.info_contact{
+	text-align: center;
+	
+}
+.info_contact:not(:last-child){
+	margin-right: 6rem;
+}
+.copyright{
+	text-align: center;
+	padding: 2rem;
+	font-size: 1.2rem;
+
+}
+
+
+
+@media(max-width: 900px){
+
+.index_column{
+	display: block;
+	font-size: .9rem;
+	width: 100%;
+}
+.index_column p {
+	margin-top: 1.5rem;
+}
+
+.info_contact{
+	width: 100%;
+}
+.info ul li{
+    font-size: 1rem !important;
+    text-align: left;
+}
+
+
+}
